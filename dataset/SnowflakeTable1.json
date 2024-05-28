@@ -1,0 +1,51 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake1",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"acct": {
+					"value": "@dataset().acct",
+					"type": "Expression"
+				},
+				"username": {
+					"value": "@dataset().username",
+					"type": "Expression"
+				},
+				"wh": {
+					"value": "@dataset().wh",
+					"type": "Expression"
+				},
+				"db": {
+					"value": "@dataset().db",
+					"type": "Expression"
+				},
+				"role": {
+					"value": "@dataset().role",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"acct": {
+				"type": "string"
+			},
+			"username": {
+				"type": "string"
+			},
+			"db": {
+				"type": "string"
+			},
+			"wh": {
+				"type": "string"
+			},
+			"role": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": []
+	}
+}
