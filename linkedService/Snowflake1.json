@@ -1,0 +1,13 @@
+{
+	"name": "Snowflake1",
+	"properties": {
+		"type": "Snowflake",
+		"annotations": [],
+		"typeProperties": {
+			"authenticationType": "Basic",
+			"connectionString": "jdbc:snowflake://ra89421.east-us-2.azure.snowflakecomputing.com/?user=ADF_INGEST&db=SANDBOX&warehouse=SANDBOX_WH&role=DE_ARCHITECTS",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDAwNzk4MUFGLTVBQjktNEMzNS05RTRDLUVFNjJFNDNDNjQxOV8wZDI0NzM5Mi0yZjFmLTQxOGUtOWZhNC0xNTkwMzczYmViNjciDQp9"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
+}
