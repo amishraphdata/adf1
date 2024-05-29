@@ -14,7 +14,7 @@
 				"type": "string",
 				"value": "COMPUTE_WH"
 			},
-			"username": {
+			"sf_username": {
 				"type": "string",
 				"value": " ABHIUS"
 			},
