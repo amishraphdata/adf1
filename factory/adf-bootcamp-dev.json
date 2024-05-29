@@ -9,6 +9,10 @@
 			"db": {
 				"type": "string",
 				"value": "SRC_SNOWFLAKE_SHARES"
+			},
+			"wh": {
+				"type": "string",
+				"value": "COMPUTE_WH"
 			}
 		}
 	},
