@@ -18,7 +18,7 @@
 				"type": "string",
 				"value": " ABHIUS"
 			},
-			"role": {
+			"sf_role": {
 				"type": "string",
 				"value": "ACCOUNTADMIN"
 			}
