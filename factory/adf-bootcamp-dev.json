@@ -5,6 +5,10 @@
 			"acct": {
 				"type": "string",
 				"value": "BNOHOIB-FCB33097"
+			},
+			"db": {
+				"type": "string",
+				"value": "SRC_SNOWFLAKE_SHARES"
 			}
 		}
 	},
