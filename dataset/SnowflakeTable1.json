@@ -3,29 +3,7 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Snowflake1",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"acct": {
-					"value": "@dataset().acct",
-					"type": "Expression"
-				},
-				"username": {
-					"value": "@dataset().username",
-					"type": "Expression"
-				},
-				"wh": {
-					"value": "@dataset().wh",
-					"type": "Expression"
-				},
-				"db": {
-					"value": "@dataset().db",
-					"type": "Expression"
-				},
-				"role": {
-					"value": "@dataset().role",
-					"type": "Expression"
-				}
-			}
+			"type": "LinkedServiceReference"
 		},
 		"parameters": {
 			"acct": {
