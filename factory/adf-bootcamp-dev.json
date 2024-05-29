@@ -10,7 +10,7 @@
 				"type": "string",
 				"value": "SRC_SNOWFLAKE_SHARES"
 			},
-			"wh": {
+			"sf_wh": {
 				"type": "string",
 				"value": "COMPUTE_WH"
 			},
