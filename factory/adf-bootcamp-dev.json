@@ -2,7 +2,7 @@
 	"name": "adf-bootcamp-dev",
 	"properties": {
 		"globalParameters": {
-			"acct": {
+			"sf_acct": {
 				"type": "string",
 				"value": "BNOHOIB-FCB33097"
 			},
