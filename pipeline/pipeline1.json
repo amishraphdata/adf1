@@ -27,23 +27,23 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"acct": {
-								"value": "@pipeline().parameters.acct",
+								"value": "@pipeline().globalParameters.sf_acct",
 								"type": "Expression"
 							},
 							"username": {
-								"value": "@pipeline().parameters.username",
+								"value": "@pipeline().globalParameters.sf_username",
 								"type": "Expression"
 							},
 							"db": {
-								"value": "@pipeline().parameters.db",
+								"value": "@pipeline().globalParameters.sf_db",
 								"type": "Expression"
 							},
 							"wh": {
-								"value": "@pipeline().parameters.wh",
+								"value": "@pipeline().globalParameters.sf_wh",
 								"type": "Expression"
 							},
 							"role": {
-								"value": "@pipeline().parameters.role",
+								"value": "@pipeline().globalParameters.sf_role",
 								"type": "Expression"
 							}
 						}
