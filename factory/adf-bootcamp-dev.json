@@ -1,0 +1,12 @@
+{
+	"name": "adf-bootcamp-dev",
+	"properties": {
+		"globalParameters": {
+			"acct": {
+				"type": "string",
+				"value": "BNOHOIB-FCB33097"
+			}
+		}
+	},
+	"location": "eastus"
+}
