@@ -6,7 +6,7 @@
 				"type": "string",
 				"value": "BNOHOIB-FCB33097"
 			},
-			"db": {
+			"sf_db": {
 				"type": "string",
 				"value": "SRC_SNOWFLAKE_SHARES"
 			},
