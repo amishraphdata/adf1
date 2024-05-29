@@ -17,6 +17,10 @@
 			"username": {
 				"type": "string",
 				"value": " ABHIUS"
+			},
+			"role": {
+				"type": "string",
+				"value": "ACCOUNTADMIN"
 			}
 		}
 	},
