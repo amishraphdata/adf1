@@ -1,0 +1,74 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Lookup1",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeV2Source",
+						"query": "SELECT DISTINCT TRIM(UPPER(JOB_ID)) JOB_ID,TRIM(UPPER(TABLE_SCHEMA)) TABLE_SCHEMA, TRIM(UPPER(TABLE_NAME)) TABLE_NAME, TRIM(UPPER(TABLE_QUERY)) TABLE_QUERY, TRIM(UPPER(INCREMENTAL_FLAG)) INCREMENTAL_FLAG, TRIM(UPPER(SCHEDULE)) SCHEDULE, TRIM(UPPER(REFRESH_FREQUENCY)) REFRESH_FREQUENCY, TRIM(UPPER(SNOWFLAKE_INCREMENTAL_IDENTIFIERS))  INCREMENTAL_IDENTIFIERS,TRIM(UPPER(SQL_DB_INCREMENTAL_IDENTIFIERS))  SQL_DB_INCREMENTAL_IDENTIFIERS FROM  SRC_SNOWFLAKE_SHARES.CONTROL_SCHEMA.CONTROL_TABLE",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"dataset": {
+						"referenceName": "SnowflakeTable1",
+						"type": "DatasetReference",
+						"parameters": {
+							"acct": {
+								"value": "@pipeline().parameters.acct",
+								"type": "Expression"
+							},
+							"username": {
+								"value": "@pipeline().parameters.username",
+								"type": "Expression"
+							},
+							"db": {
+								"value": "@pipeline().parameters.db",
+								"type": "Expression"
+							},
+							"wh": {
+								"value": "@pipeline().parameters.wh",
+								"type": "Expression"
+							},
+							"role": {
+								"value": "@pipeline().parameters.role",
+								"type": "Expression"
+							}
+						}
+					},
+					"firstRowOnly": false
+				}
+			}
+		],
+		"parameters": {
+			"acct": {
+				"type": "String"
+			},
+			"db": {
+				"type": "String"
+			},
+			"username": {
+				"type": "String"
+			},
+			"role": {
+				"type": "String"
+			},
+			"wh": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
